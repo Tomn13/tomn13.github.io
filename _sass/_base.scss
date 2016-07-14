@@ -1,19 +1,19 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
+/*body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
-
+*/
 
 
 /**
  * Basic styling
  */
-body {
+/*body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
@@ -24,48 +24,155 @@ body {
     font-feature-settings: "kern" 1;
     font-kerning: normal;
 }
+*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 
+header {
+  padding: 20px 0;
+  
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  
+  h1 {
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  p { 
+    padding: 0 20px;
+    margin: 0;
+  }
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/jumbotron.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  
+  h2 {
+    font : {
+      size: 60px;
+      weight: 700;
+    }
+    margin: 0;
+    color: #fff;
+  }
+
+  h3 {
+    margin: 0 0 20px;
+    color: #fff;
+  }
+}  
+
+section {
+  .row img {
+    margin: 0 0 30px;
+    width: 100%;
+  }  
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  text-shadow: none;
+  background-color: #ffffff;
+}
+
+  .hover {
+    color: #ffffff;
+    background-color: #fbd1d5;
+  }
+}  
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+  
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .col-sm-8 {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li img {
+    width: 32px;
+    height: 32px;
+  }
+}
 
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
+/*h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
-
+*/
 
 
 /**
  * Images
  */
-img {
+/*img {
     max-width: 100%;
     vertical-align: middle;
 }
-
+*/
 
 
 /**
  * Figures
  */
-figure > img {
+/*figure > img {
     display: block;
 }
 
 figcaption {
     font-size: $small-font-size;
 }
-
+*/
 
 
 /**
  * Lists
  */
-ul, ol {
+/*ul, ol {
     margin-left: $spacing-unit;
 }
 
@@ -75,22 +182,22 @@ li {
          margin-bottom: 0;
     }
 }
-
+*/
 
 
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
-
+*/
 
 
 /**
  * Links
  */
-a {
+/*a {
     color: $brand-color;
     text-decoration: none;
 
@@ -103,13 +210,13 @@ a {
         text-decoration: underline;
     }
 }
-
+*/
 
 
 /**
  * Blockquotes
  */
-blockquote {
+/*blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
@@ -121,13 +228,13 @@ blockquote {
         margin-bottom: 0;
     }
 }
-
+*/
 
 
 /**
  * Code formatting
  */
-pre,
+/*pre,
 code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
@@ -149,13 +256,13 @@ pre {
         padding-left: 0;
     }
 }
-
+*/
 
 
 /**
  * Wrapper
  */
-.wrapper {
+/*.wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
@@ -171,13 +278,13 @@ pre {
         padding-left: $spacing-unit / 2;
     }
 }
-
+*/
 
 
 /**
  * Clearfix
  */
-%clearfix {
+/*%clearfix {
 
     &:after {
         content: "";
@@ -185,20 +292,20 @@ pre {
         clear: both;
     }
 }
-
+*/
 
 
 /**
  * Icons
  */
-.icon {
+/*.icon {
 
     > svg {
         display: inline-block;
         width: 16px;
         height: 16px;
         vertical-align: middle;
-
+*/
         path {
             fill: $grey-color;
         }
